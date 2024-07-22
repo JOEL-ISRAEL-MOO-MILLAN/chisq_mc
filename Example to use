@@ -1,0 +1,41 @@
+site <- c("DOMESTIC", "VILLAGES", "DOMESTIC", "SYLVATIC", "VILLAGES", "DOMESTIC", "SYLVATIC", "VILLAGES")
+infected <- c(385, 504, 514, 107, 257, 117, 450, 13)
+uninfected <- c(445, 496, 100, 578, 647, 412, 484, 737)
+data <- data.frame(site, infected, uninfected)
+
+Compare_pairs(data)
+
+ comparison.pairs          x2       p_value   p_value_adj Fisher_Test Signif
+ DOMESTIC vs VILLAGES   2.7676149  9.618939e-02  1.000000e+00          No     NS
+ DOMESTIC vs DOMESTIC 207.6919348  4.379587e-47  1.226284e-45          No    ***
+ DOMESTIC vs SYLVATIC 160.5785737  8.457428e-37  2.368080e-35          No    ***
+ DOMESTIC vs VILLAGES  59.0698695  1.521716e-14  4.260804e-13          No    ***
+ DOMESTIC vs DOMESTIC  80.6477215  2.697654e-19  7.553431e-18          No    ***
+ DOMESTIC vs SYLVATIC   0.4978826  4.804320e-01  1.000000e+00          No     NS
+ DOMESTIC vs VILLAGES 414.4857711  3.869921e-92  1.083578e-90          No    ***
+ VILLAGES vs DOMESTIC 179.8377811  5.258228e-41  1.472304e-39          No    ***
+ VILLAGES vs SYLVATIC 211.2594401  7.296179e-48  2.042930e-46          No    ***
+ VILLAGES vs VILLAGES  94.6068943  2.322082e-22  6.501829e-21          No    ***
+ VILLAGES vs DOMESTIC 113.5744901  1.614988e-26  4.521967e-25          No    ***
+ VILLAGES vs SYLVATIC   0.8655747  3.521833e-01  1.000000e+00          No     NS
+ VILLAGES vs VILLAGES 485.3154987 1.489759e-107 4.171326e-106          No    ***
+ DOMESTIC vs SYLVATIC 598.9334856 2.856109e-132 7.997104e-131          No    ***
+ DOMESTIC vs VILLAGES 444.9219292  9.188785e-99  2.572860e-97          No    ***
+ DOMESTIC vs DOMESTIC 433.5043188  2.806600e-96  7.858479e-95          No    ***
+ DOMESTIC vs SYLVATIC 197.5906825  7.008329e-45  1.962332e-43          No    ***
+ DOMESTIC vs VILLAGES 953.5718744 2.219768e-209 6.215349e-208          No    ***
+ SYLVATIC vs VILLAGES  35.4826183  2.573367e-09  7.205428e-08          No    ***
+ SYLVATIC vs DOMESTIC   7.9466982  4.817519e-03  1.348905e-01          No     NS
+ SYLVATIC vs SYLVATIC 184.1943719  5.884040e-42  1.647531e-40          No    ***
+ SYLVATIC vs VILLAGES  88.2959401  5.635901e-21  1.578052e-19          No    ***
+ VILLAGES vs DOMESTIC   6.5700789  1.037074e-02  2.903806e-01          No     NS
+ VILLAGES vs SYLVATIC  74.8759718  5.012333e-18  1.403453e-16          No    ***
+ VILLAGES vs VILLAGES 211.9218493  5.230963e-48  1.464670e-46          No    ***
+ DOMESTIC vs SYLVATIC  95.5532432  1.439668e-22  4.031071e-21          No    ***
+ DOMESTIC vs VILLAGES 138.9318131  4.558350e-32  1.276338e-30          No    ***
+ SYLVATIC vs VILLAGES 447.8262234  2.143838e-99  6.002747e-98          No    ***
+
+Signif. codes: ***= 0.0001; **=0.001; *=0.01 ; 0.05=NS; 0.1=NS
+  
+github:https://github.com/JOEL-ISRAEL-MOO-MILLAN
+Designed by Antoine Amblard-Rambert & Moo-Millan Joel Israel
