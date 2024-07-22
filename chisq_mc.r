@@ -1,4 +1,4 @@
-Compare_pairs <- function(data) {
+chisq_mc <- function(data) {
 
   col_sites <- 1  
   col_values <- 2:ncol(data)  
