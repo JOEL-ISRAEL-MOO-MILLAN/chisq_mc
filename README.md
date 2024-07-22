@@ -12,7 +12,7 @@ uninfected <- c(445, 496, 100, 578, 647, 412, 484, 737)
 data <- data.frame(site, infected, uninfected)
 
 # Compare 
-compare_pairs(data)
+chisq_mc(data)
 
 ## Citation
 
