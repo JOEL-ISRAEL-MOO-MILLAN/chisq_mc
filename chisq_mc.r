@@ -35,9 +35,9 @@ chisq_mc <- function(data) {
         results <- rbind(results, data.frame(`comparison pairs` = comparison,
                                                    x2 = chi_cuadrado$statistic,
                                                    p_value = p_value,
-                                                   p_value_adj = NA,  # Placeholder
+                                                   p_value_adj = NA,  
                                                    Fisher_Test = "No",
-                                                   Signif = "",  # Placeholder,
+                                                   Signif = "", 
                                                    stringsAsFactors = FALSE))
       }
     }
